@@ -81,3 +81,98 @@ nav ul li a.active {
   background: var(--primary);
 }
 
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url('../assets/pauline-iakovleva-i_Q2NtjKW9E-unsplash.jpg') no-repeat center/cover;
+  text-align: center;
+}
+
+.btn {
+  background: var(--primary);
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  color: #000000;
+  text-decoration: none;
+  display: inline-block;
+  transition: transform 0.3s;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+}
+
+/* Cards */
+.cards {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.card {
+  flex: 1 1 30%;
+  background: var(--accent);
+  padding: 1.5rem;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.slideshow-container {
+  position: relative;
+  max-width: 700px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.slide {
+  display: none;
+  text-align: center;
+  padding: 20px;
+  background: var(--accent);
+  border-radius: 12px;
+}
+
+.slide img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 10px;
+  margin-top: -22px;
+  color: var(--primary);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.3s;
+  user-select: none;
+  background: rgba(0,0,0,0.5);
+  border-radius: 50%;
+}
+
+.next {
+  right: 0;
+}
+
+.prev {
+  left: 0;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+.section {
+  padding: 4rem 2rem;
+  border-bottom: 2px solid var(--primary);
+}
