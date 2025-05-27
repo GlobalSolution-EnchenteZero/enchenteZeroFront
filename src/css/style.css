@@ -176,3 +176,33 @@ nav ul li a.active {
   padding: 4rem 2rem;
   border-bottom: 2px solid var(--primary);
 }
+
+.question {
+  margin-bottom: 1.5rem;
+}
+
+.question label {
+  display: block;
+  margin-left: 1rem;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+    flex-direction: column;
+    background: var(--accent);
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 200px;
+  }
+
+  nav ul.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+}

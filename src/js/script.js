@@ -1,3 +1,42 @@
+
+// Menu Hamburguer
+const menuToggle = document.getElementById('menu-toggle');
+const menu = document.getElementById('menu');
+
+menuToggle.addEventListener('click', () => {
+  menu.classList.toggle('active');
+});
+
+// Quiz redirecionamento
+const quizButton = document.getElementById('quiz-btn');
+if(quizButton){
+  quizButton.addEventListener('click', () => {
+    window.location.href = 'quiz.html';
+  });
+}
+
+// Slideshow
+let slides = document.querySelectorAll('.slide');
+let currentSlide = 0;
+
+function nextSlide() {
+  if (slides.length > 0) {
+    slides[currentSlide].classList.remove('active');
+    currentSlide = (currentSlide + 1) % slides.length;
+    slides[currentSlide].classList.add('active');
+  }
+}
+
+setInterval(nextSlide, 5000);
+
+// Troca de tema
+const themeButtons = document.querySelectorAll('button[data-theme]');
+themeButtons.forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.documentElement.setAttribute('data-theme', btn.dataset.theme);
+  });
+});
+
 let slideIndex = 0;
 showSlides();
 
