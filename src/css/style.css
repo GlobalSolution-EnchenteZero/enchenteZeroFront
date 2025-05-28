@@ -48,6 +48,21 @@ nav {
   align-items: center;
 }
 
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem; 
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.logo-img {
+  width: 30px; 
+  height: auto;
+}
+
 nav ul {
   display: flex;
   list-style: none;
