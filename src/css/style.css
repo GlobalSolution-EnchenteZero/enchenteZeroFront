@@ -224,4 +224,20 @@ footer {
   }
 }
 
+input:required, textarea:required {
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+  border-radius: 8px;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+input:focus, textarea:focus {
+  border-color: var(--primary);
+  outline: none;
+}
+
+.btn {
+  cursor: pointer;
+}
 
