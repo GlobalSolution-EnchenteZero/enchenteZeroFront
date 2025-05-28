@@ -7,6 +7,8 @@ menuToggle.addEventListener('click', () => {
   menu.classList.toggle('active');
 });
 
+
+
 // Quiz redirecionamento
 const quizButton = document.getElementById('quiz-btn');
 if(quizButton){

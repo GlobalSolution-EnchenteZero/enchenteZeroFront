@@ -67,6 +67,7 @@ nav ul li a.active {
   border-bottom: 2px solid var(--primary);
 }
 
+
 .menu-toggle {
   display: none;
   flex-direction: column;
@@ -102,6 +103,15 @@ nav ul li a.active {
 
 .btn:hover {
   transform: translateY(-3px);
+}
+
+.section img {
+  max-width: 50%;
+  height: auto;
+  display: block;
+  margin: 1rem auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
 }
 
 /* Cards */
@@ -177,6 +187,13 @@ nav ul li a.active {
   border-bottom: 2px solid var(--primary);
 }
 
+footer {
+  background: var(--accent);
+  text-align: center;
+  padding: 1rem;
+  border-top: 2px solid var(--primary);
+}
+
 .question {
   margin-bottom: 1.5rem;
 }
@@ -206,3 +223,5 @@ nav ul li a.active {
     display: flex;
   }
 }
+
+
