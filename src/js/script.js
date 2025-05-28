@@ -7,7 +7,13 @@ menuToggle.addEventListener('click', () => {
   menu.classList.toggle('active');
 });
 
-
+//Cores de fundo
+const btntema = document.querySelectorAll('.theme-btn');
+  btntema.forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.body.style.backgroundColor = btn.dataset.bg;
+    });
+  });
 
 // Quiz redirecionamento
 const quizButton = document.getElementById('quiz-btn');
